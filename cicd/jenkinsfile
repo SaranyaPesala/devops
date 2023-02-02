@@ -1,1 +1,7 @@
+pipeline {
+agent any
+stage('stage:scm '){
+steps:git branch: 'main', changelog: false, poll: false, url: 'https://github.com/SaranyaPesala/devops.git'
+}
+}
 
